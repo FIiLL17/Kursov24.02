@@ -1,0 +1,124 @@
+.genplan {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+    background: url('img/5d013314123fe05f5942bb775a72.jpeg') no-repeat center center;
+    background-size: cover;
+}
+
+.marker {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.marker:hover {
+    width: 30px;
+    height: 30px;
+}
+
+.highlight {
+    position: absolute;
+    width: 300px;
+    height: 620px;
+    background: rgba(0, 0, 255, 0.2);
+    border: 2px solid rgba(0, 0, 255, 0.5);
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.info-box {
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Показываем выделение и инфо-блок при наведении на маркер */
+.marker:hover + .highlight, 
+.marker:hover + .highlight + .info-box {
+    display: block;
+}
+
+/* Позиции значков */
+.k1 { top: 350px; left: 800px; }
+.k2 { top: 450px; left: 1450px; }
+.k3 { top: 600px; left: 1130px; }
+.k4 { top: 450px; left: 330px; }
+.k5 { top: 450px; left: 940px; }
+.s { top: 510px; left: 620px; background-color: darkblue; }
+.m { top: 760px; left: 720px; background-color: darkblue; }
+
+/* Позиции и размеры выделений */
+.highlight.k1 { top: 100px; left: 700px; }
+.highlight.k2 { top: 150px; left: 1325px; }
+.highlight.k3 { top: 300px; left: 1010px; }
+.highlight.k4 { top: 170px; left: 230px; } 
+.highlight.k5 { top: 180px; left: 820px; }
+
+/* Позиции информационных окон */
+.info-box.k1 { top: 140px; left: 670px; }
+.info-box.k2 { top: 230px; left: 1320px; }
+.info-box.k3 { top: 380px; left: 1000px; }
+.info-box.k4 { top: 230px; left: 200px; }
+.info-box.k5 { top: 230px; left: 800px; }
+
+-------------------------------------------------------------------------------------------
+    <div class="genplan">
+        <div class="marker k1">K1</div>
+        <div class="highlight k1"></div>
+        <div class="info-box k1">
+        <h1>K1</h1>
+        Сдача в 1 квартале 2028 • 18 этажей <br>
+        <p>нет квартир в продаже</p>
+        </div>
+
+        <div class="marker k2">K2</div>
+        <div class="highlight k2"></div>
+        <div class="info-box k2">
+        <h1>K2</h1>
+        Сдача в 2 квартале 2028 • 18 этажей <br>
+        <p>нет квартир в продаже</p>
+        </div>
+
+        <div class="marker k3">K3</div>
+        <div class="highlight k3"></div>
+        <div class="info-box k3">
+        <h1>K3</h1>
+        Сдача в 4 квартале 2028 • 18 этажей <br>
+        <p>нет квартир в продаже</p>
+        </div>
+
+        <div class="marker k4">K4</div>
+        <div class="highlight k4"></div>
+        <div class="info-box k4">
+        <h1>K4</h1>
+        Сдача в 1 квартале 2028 • 18 этажей <br>
+        <p>нет квартир в продаже</p>
+        </div>
+
+        <div class="marker k5">K5</div>
+        <div class="highlight k5"></div>
+        <div class="info-box k5">
+        <h1>K5</h1>
+        Сдача в 3 квартале 2028 • 18 этажа <br>
+        <p>нет квартир в продаже</p>
+        </div>
+
+        <div class="marker s">S</div>
+        <div class="marker m">M</div>
+    </div>

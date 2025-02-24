@@ -1,0 +1,662 @@
+@font-face {
+    font-family: 'Lora';
+    src: url("ofont.ru_Lora.ttf") format("truetype");
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', sans-serif;
+}
+
+body {
+    /* background-image: url(img/08078743ef7367b6aebdf98871f8\ 1.png); */
+    background-image: url(img/testFon/Rectangle\ 4.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover; 
+}
+
+a {
+    text-decoration: none;
+}
+/* -------------------------------------------------------------header------------------------------------------------------------- */
+.header{
+    display: flex;
+    width: 1920px;
+    height: 110px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-left {
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-center {
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-right {
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tel>a{
+    color: black;
+    font-size: 40px;
+}
+
+.header-right>a{
+    color: black;
+    font-size: 25px ;
+}
+
+.header-left>a{
+    color: black;
+    font-size: 25px;
+}
+
+.header-left>a>img{
+    width: 40px;
+    height: 40px;
+}
+
+.header-center>a>img{
+    width: 60px;
+    height: 60px;
+}
+
+.header-right>a>img{
+    width: 55px;
+    height: 55px;
+}
+/* -------------------------------------------------------------header------------------------------------------------------------- */
+
+/* -------------------------------------------------------------slider------------------------------------------------------------- */
+.container_slider_css {
+    margin: 50px auto;
+    width: 1550px; /* Фиксированная ширина слайдера */
+    height: 870px; /* Фиксированная высота слайдера */
+    overflow: hidden;
+    position: relative; /* Относительное позиционирование для текста */
+    z-index: -1;
+    border-radius: 25px;
+    -webkit-box-shadow: 0px 5px 20px 18px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 20px 18px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 20px 18px rgba(0, 0, 0, 0.3);
+}
+
+.photo_slider_css {
+    position: absolute;
+    animation: round 30s infinite;
+    opacity: 0;
+    width: 100%;
+    height: 100%; /* Изображение заполняет контейнер */
+    object-fit: cover; /* Чтобы изображения не искажались */
+}
+
+@keyframes round {
+    25% { opacity: 1; }
+    40% { opacity: 0; }
+}
+
+img:nth-child(1) { animation-delay: 20s; }
+img:nth-child(2) { animation-delay: 16s; }
+img:nth-child(3) { animation-delay: 12s; }
+img:nth-child(4) { animation-delay: 8s; }
+img:nth-child(5) { animation-delay: 4s; }
+img:nth-child(6) { animation-delay: 0; }
+
+.Name {
+    position: absolute; /* Абсолютное позиционирование внутри контейнера */
+    top: 50%; /* Позиция по вертикали */
+    left: 50%; /* Позиция по горизонтали */
+    transform: translate(-50%, -50%); /* Точное центрирование */
+    z-index: 2; /* Текст поверх изображений */
+    text-align: center; /* Выравнивание текста по центру */
+    width: 800px;
+    height: 350px;
+    border: 5px solid black;
+    border-radius: 50%;
+    /* -webkit-box-shadow: 0px 5px 20px 18px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 5px 20px 18px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 20px 18px rgba(0, 0, 0, 0.3); */
+    background-color: #83684d49;
+}
+
+.Name h1 {
+    font-size: 105px; /* Фиксированный размер текста */
+    font-weight: 400;
+    color: black; /* Цвет текста */
+    text-shadow: 6px 6px 15px rgba(84, 60, 37, 0.8), -3px -3px 7px rgba(210, 180, 140, 0.7);
+    margin-top: 110px;
+    
+}
+/* -------------------------------------------------------------slider------------------------------------------------------------- */
+
+/* -------------------------------------------------------------about------------------------------------------------------------- */
+.about{
+    width: 1550px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    margin: 0 auto;
+}
+
+.spetification{
+    width: 275px;
+    height: 50px;
+    display: flex;
+}
+
+.spetification>img{
+    width: 40px;
+    height: 40px;
+}
+
+.spetification>.text-block{
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.spetification>.text-block>span{
+    font-size: 16px;
+    font-weight: 700;
+}
+/* -------------------------------------------------------------about------------------------------------------------------------- */
+
+/* -------------------------------------------------------------genplan------------------------------------------------------------- */
+
+.genplan {
+    position: relative;
+    width: 1900px;
+    height: 1080px;
+    background: url('img/5d013314123fe05f5942bb775a72.jpeg') no-repeat center center;
+    background-size: cover;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.marker {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.marker:hover {
+    width: 30px;
+    height: 30px;
+}
+
+.highlight {
+    position: absolute;
+    width: 300px;
+    height: 620px;
+    background: rgba(0, 0, 255, 0.2);
+    border: 2px solid rgba(0, 0, 255, 0.5);
+    display: none;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+.info-box {
+    position: absolute;
+    background: white;
+    width: 300px;
+    height: 180px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 15;
+}
+
+.info-box-min{
+    position: absolute;
+    background: white;
+    width: 150px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 15;
+}
+
+.info-box-min>p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+/* Показываем выделение и инфо-блок при наведении на маркер */
+.marker.k1:hover ~ .highlight.k1, 
+.marker.k1:hover ~ .info-box.k1,
+.marker.k2:hover ~ .highlight.k2, 
+.marker.k2:hover ~ .info-box.k2,
+.marker.k3:hover ~ .highlight.k3, 
+.marker.k3:hover ~ .info-box.k3,
+.marker.k4:hover ~ .highlight.k4, 
+.marker.k4:hover ~ .info-box.k4,
+.marker.k5:hover ~ .highlight.k5, 
+.marker.k5:hover ~ .info-box.k5,
+.marker.s:hover ~ .info-box-min.s,
+.marker.m:hover ~ .info-box-min.m {
+    display: block;
+}
+
+/* Позиции значков */
+.k1 { top: 350px; left: 800px; }
+.k2 { top: 450px; left: 1450px; }
+.k3 { top: 600px; left: 1130px; }
+.k4 { top: 450px; left: 330px; }
+.k5 { top: 450px; left: 940px; }
+.s { top: 510px; left: 620px; }
+.m { top: 760px; left: 720px; }
+
+/* Позиции и размеры выделений */
+.highlight.k1 { top: 100px; left: 700px; }
+.highlight.k2 { top: 150px; left: 1325px; }
+.highlight.k3 { top: 300px; left: 1010px; }
+.highlight.k4 { top: 170px; left: 230px; }
+.highlight.k5 { top: 180px; left: 820px; }
+
+/* Позиции информационных окон */
+.info-box.k1 { top: 140px; left: 670px; }
+.info-box.k2 { top: 230px; left: 1320px; }
+.info-box.k3 { top: 380px; left: 1000px; }
+.info-box.k4 { top: 230px; left: 200px; }
+.info-box.k5 { top: 230px; left: 800px; }
+.info-box-min.s { top: 465px; left: 560px; }
+.info-box-min.m { top: 710px; left: 660px; }
+/* -------------------------------------------------------------genplan------------------------------------------------------------- */
+
+/* -------------------------------------------------------------gallery------------------------------------------------------------- */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    width: 1550px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.photo {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.photo img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
+}
+
+.photo p {
+    margin: 10px 0 0;
+    font-size: 16px;
+    color: #333;
+}
+/* -------------------------------------------------------------gallery------------------------------------------------------------- */
+
+/* -------------------------------------------------------------reviews------------------------------------------------------------- */
+.reviews-block {
+    max-width: 1550px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 100px;
+}
+
+.reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.reviews-header h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.show-all-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.ratings-section {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.rating-item {
+    flex: 1;
+    text-align: center;
+}
+
+.rating-item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.rating-values span {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+
+.review {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.review-header .author {
+    font-weight: bold;
+    color: #333;
+}
+
+.review-header .date {
+    color: #777;
+    font-size: 14px;
+}
+
+.review-header .tag {
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 12px;
+    color: #fff;
+}
+
+.review-header .useful {
+    background-color: #28a745;
+}
+
+.review-header .new {
+    background-color: #ffc107;
+}
+
+.review-content {
+    margin-bottom: 10px;
+}
+
+.review-content h4 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.review-content p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.review-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #555;
+}
+
+.review-footer strong {
+    color: #333;
+}
+/* -------------------------------------------------------------reviews------------------------------------------------------------- */
+
+/* -------------------------------------------------------------kompani------------------------------------------------------------- */
+.kompani {
+    margin: 0 auto;
+    width: 1550px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kompani-left {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.kompani-left img {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.kompani-left .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.kompani-left .info p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.kompani-left .info h1 {
+    margin: 5px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.kompani-left .info h3 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.kompani-left .info h3 img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.kompani-right {
+    width: 50%;
+}
+
+.kompani-right .top {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.kompani-right .top .stat {
+    text-align: center;
+}
+
+.kompani-right .top .stat h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.kompani-right .top .stat p {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.kompani-right .text-block {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.kompani-right .more-link {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.kompani-right .more-link:hover {
+    text-decoration: underline;
+}
+/* -------------------------------------------------------------kompani------------------------------------------------------------- */
+
+/* -------------------------------------------------------------map------------------------------------------------------------- */
+#map {
+    width: 100%; /* Ширина на весь контейнер */
+    height: 500px; /* Высота 500 пикселей */
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid #ccc; /* Обязательно нужна граница */
+    border-radius: 25px; /* Скругление углов */
+    overflow: hidden;
+  }
+/* -------------------------------------------------------------kompani------------------------------------------------------------- */
+
+/* -------------------------------------------------------------fotter------------------------------------------------------------- */
+.fotter{
+    width: 1550px;
+    height: 400px;
+    background-color: black;
+    border-radius: 25px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.fotter-left-about{
+    display: flex;
+    margin-top: 50px;
+}
+
+.fotter-left-about p{
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+
+
+.fotter-left p {
+    color: white;
+    margin-top: 40px;
+}
+
+.test{
+    display: flex;
+}
+
+.test1>a >img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+.test2>a >img{
+    width: 40px;
+    height: 40px;
+}
+.test3>a >img{
+    width: 40px;
+    height: 40px;
+}
+
+.test1 ,.test2 ,.test3{
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.fotter-center a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin-top: 20px;
+}
+
+
+.fotter-right{
+    display: flex;
+    flex-direction: column;
+}
+
+.fotter-right input{
+    width: 170px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid black;
+    text-decoration: underline;
+}
+
+.fotter-right button{
+    border-radius: 25px;
+    width: 170px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+
+
