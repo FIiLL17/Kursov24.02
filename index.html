@@ -108,51 +108,53 @@
     <div class="gallery">
         <div class="gallery-item" onclick="openModal('finishing', ['img/galery/otdelca/hallway.webp', 'img/galery/otdelca/balcony.webp', 'img/galery/otdelca/bathroom.webp', 'img/galery/otdelca/bedroom.webp', 'img/galery/otdelca/kitcheb.webp', 'img/galery/otdelca/living room.webp', 'img/galery/otdelca/storeroom.webp', 'img/galery/otdelca/wardrobe.webp'], 'Отделка', ['Архитектурное специализируется на инновационном эко дизайне зданий, который не только органично вписывается в окружающую среду, но и становится ее неотъемлемой частью. В SHIFT представлены два варианта отделки на выбор: в теплой и холодной гамме.'])">
             <div class="photo">
-            <img src="img/galery/otdelca/hallway.webp" alt="Отделка">
-            <div class="overlay">Отделка</div> 
+                <img src="img/galery/otdelca/hallway.webp" alt="Отделка">
+                <div class="overlay">Отделка</div> 
             </div>
         </div>
         <div class="gallery-item" onclick="openModal('parking', ['img/galery/arhitect/1.jpg', 'img/galery/arhitect/2.jpg', 'img/galery/arhitect/3.jpg'], 'Архитекрута', ['Внутренняя территория SHIFT представляет собой многофункциональное общественное пространство с ландшафтным двором-парком, детскими и спортивными площадками, а также зонами для отдыха и общения. Дизайн малых архитектурных форм, украшающих приватную территорию проекта, продолжает современную стилистику и подчеркивает индивидуальный характер башен.'])">
             <div class="photo">
-            <img src="img/galery/arhitect/1.jpg" alt="Архитекрута">
-            <div class="overlay">Архитекрута</div>
+                <img src="img/galery/arhitect/1.jpg" alt="Архитекрута">
+                <div class="overlay">Архитекрута</div>
             </div>
         </div>
         <div class="gallery-item" onclick="openModal('finishing', ['img/galery/strit/1.jpg', 'img/galery/strit/2.jpg', 'img/galery/strit/3.jpg', 'img/galery/strit/4.jpg'], 'Внутренний двор', ['Внутренняя территория SHIFT представляет собой многофункциональное общественное пространство с ландшафтным двором-парком, детскими и спортивными площадками, а также зонами для отдыха и общения. Дизайн малых архитектурных форм, украшающих приватную территорию проекта, продолжает современную стилистику и подчеркивает индивидуальный характер башен.'])">
             <div class="photo">
-            <img src="img/galery/strit/1.jpg" alt="Внутренний двор">
-            <div class="overlay">Внутренний двор</div>
+                <img src="img/galery/strit/1.jpg" alt="Внутренний двор">
+                <div class="overlay">Внутренний двор</div>
             </div>
         </div>
         <div class="gallery-item" onclick="openModal('parking', ['img/galery/parling/parcking.webp'], 'Парковка', ['Места для автомобилей, мотоциклов и велосипедов, а также кладовых расположены на двух уровнях подземного паркинга. 528 машиномест, в том числе 130 мест для электромобилей.'])">
             <div class="photo">
-            <img src="img/galery/parling/parcking.webp" alt="Парковка">
-            <div class="overlay">Парковка</div>
+                <img src="img/galery/parling/parcking.webp" alt="Парковка">
+                <div class="overlay">Парковка</div>
             </div>
         </div>
         <div class="gallery-item" onclick="openModal('parking', ['img/galery/exit/lift.webp', 'img/galery/exit/ladder.webp', 'img/galery/exit/flor.webp'], 'Входная группа', [])">
             <div class="photo">
-            <img src="img/galery/exit/lift.webp" alt="Входная группа">
-            <div class="overlay">Входная группа</div>
+                <img src="img/galery/exit/lift.webp" alt="Входная группа">
+                <div class="overlay">Входная группа</div>
+            </div>
         </div>
     </div>
-</div>
-    <div id="modal" class="modal" onclick="closeModal(event)">
-        <div class="modal-content" onclick="event.stopPropagation()">
+    
+    <div id="modal-gallery" class="modal-gallery" onclick="closeModal(event)">
+        <div class="modal-content-gallery" onclick="event.stopPropagation()">
             <button class="close-button" onclick="closeModal(event)">&times;</button>
-            <div class="modal-image-container">
-                <img id="modal-image" src="" alt="">
+            <div class="modal-image-container-gallery">
+                <img id="modal-image-gallery" src="" alt="">
                 <button id="prev" onclick="prevImage(event)">&#10094;</button>
                 <button id="next" onclick="nextImage(event)">&#10095;</button>
             </div>
-            <div class="modal-text">
-                <h2 id="modal-title"></h2>
-                <p id="modal-description1"></p>
-                <p id="modal-description2"></p>
-                <p id="modal-description3"></p>
+            <div class="modal-text-gallery">
+                <h2 id="modal-title-gallery"></h2>
+                <p id="modal-description1-gallery"></p>
+                <p id="modal-description2-gallery"></p>
+                <p id="modal-description3-gallery"></p>
             </div>
         </div>
     </div>
+    
     <!-- /* -------------------------------------------------------------gallery------------------------------------------------------------- */ -->
   
 
@@ -160,87 +162,87 @@
     <div class="review-container">
         <!-- Кнопки выше отзывов -->
         <div class="buttons-container">
-            <button id="add-review-btn" class="add-review-btn">
-                <i class="fas fa-pen"></i> Написать отзыв
-            </button>
-            <button id="view-all-reviews-btn" class="view-all-reviews-btn">
-                <i class="fas fa-eye"></i> Просмотреть все отзывы
-            </button>
+        <button id="add-review-btn" class="add-review-btn">
+        <i class="fas fa-pen"></i> Написать отзыв
+        </button>
+        <button id="view-all-reviews-btn" class="view-all-reviews-btn">
+        <i class="fas fa-eye"></i> Просмотреть все отзывы
+        </button>
         </div>
-
+       
         <!-- Форма для добавления отзыва (скрыта по умолчанию) -->
         <div id="review-form" class="review-form">
-            <textarea id="review-textarea" placeholder="Напишите ваш отзыв..."></textarea>
-            <button id="submit-review-btn" class="submit-review-btn">Отправить</button>
+        <textarea id="review-textarea" placeholder="Напишите ваш отзыв..."></textarea>
+        <button id="submit-review-btn" class="submit-review-btn">Отправить</button>
         </div>
-
+       
         <!-- Отзывы сверху -->
         <div class="reviews-top">
-            <div class="review">
-                <div class="user-info">
-                    <img src="" alt="Аватар" class="avatar">
-                    <div>
-                        <span class="username">Иван Иванов</span>
-                        <span class="date">10 октября 2023</span>
-                    </div>
-                </div>
-                <p class="review-text">
-                    Отличный ЖК-дисплей! Цвета яркие, углы обзора широкие. Рекомендую для работы и игр.
-                </p>
-            </div>
-
-            <div class="review">
-                <div class="user-info">
-                    <img src="" alt="Аватар" class="avatar">
-                    <div>
-                        <span class="username">Мария Петрова</span>
-                        <span class="date">5 октября 2023</span>
-                    </div>
-                </div>
-                <p class="review-text">
-                    Купила ЖК-монитор для дома. Качество изображения на высоте, никаких битых пикселей.
-                </p>
-            </div>
+        <div class="review">
+        <div class="user-info">
+        <img src="" alt="Аватар" class="avatar">
+        <div>
+        <span class="username">Иван Иванов</span>
+        <span class="date">10 октября 2023</span>
         </div>
-
+        </div>
+        <p class="review-text">
+        Отличный ЖК-дисплей! Цвета яркие, углы обзора широкие. Рекомендую для работы и игр.
+        </p>
+        </div>
+       
+        <div class="review">
+        <div class="user-info">
+        <img src="" alt="Аватар" class="avatar">
+        <div>
+        <span class="username">Мария Петрова</span>
+        <span class="date">5 октября 2023</span>
+        </div>
+        </div>
+        <p class="review-text">
+        Купила ЖК-монитор для дома. Качество изображения на высоте, никаких битых пикселей.
+        </p>
+        </div>
+        </div>
+       
         <!-- Отзывы снизу -->
         <div class="reviews-bottom">
-            <div class="review">
-                <div class="user-info">
-                    <img src="" alt="Аватар" class="avatar">
-                    <div>
-                        <span class="username">Алексей Смирнов</span>
-                        <span class="date">1 октября 2023</span>
-                    </div>
-                </div>
-                <p class="review-text">
-                    Хороший монитор за свои деньги. Подходит для офисной работы.
-                </p>
-            </div>
-
-            <div class="review">
-                <div class="user-info">
-                    <img src="" alt="Аватар" class="avatar">
-                    <div>
-                        <span class="username">Елена Кузнецова</span>
-                        <span class="date">25 сентября 2023</span>
-                    </div>
-                </div>
-                <p class="review-text">
-                    Отличное качество сборки. Подключение без проблем.
-                </p>
-            </div>
+        <div class="review">
+        <div class="user-info">
+        <img src="" alt="Аватар" class="avatar">
+        <div>
+        <span class="username">Алексей Смирнов</span>
+        <span class="date">1 октября 2023</span>
         </div>
-    </div>
-
-    <!-- Модальное окно для всех отзывов -->
-    <div id="all-reviews-modal" class="modal">
+        </div>
+        <p class="review-text">
+        Хороший монитор за свои деньги. Подходит для офисной работы.
+        </p>
+        </div>
+       
+        <div class="review">
+        <div class="user-info">
+        <img src="" alt="Аватар" class="avatar">
+        <div>
+        <span class="username">Елена Кузнецова</span>
+        <span class="date">25 сентября 2023</span>
+        </div>
+        </div>
+        <p class="review-text">
+        Отличное качество сборки. Подключение без проблем.
+        </p>
+        </div>
+        </div>
+        </div>
+       
+        <!-- Модальное окно для всех отзывов -->
+        <div id="all-reviews-modal" class="modal">
         <div class="modal-content">
-            <span class="close">&times;</span> <!-- Крестик -->
-            <h2>Все отзывы</h2>
-            <div id="all-reviews-list" class="all-reviews-list"></div>
+        <span class="close">&times;</span> <!-- Крестик -->
+        <h2>Все отзывы</h2>
+        <div id="all-reviews-list" class="all-reviews-list"></div>
         </div>
-    </div>
+        </div>
     <!-- /* -------------------------------------------------------------reviews------------------------------------------------------------- */ -->
    
    

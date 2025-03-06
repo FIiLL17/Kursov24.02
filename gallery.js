@@ -4,17 +4,17 @@ let currentImages = [];
         function openModal(category, images, title, descriptions) {
             currentImages = images;
             currentIndex = 0;
-            document.getElementById("modal-image").src = currentImages[currentIndex];
-            document.getElementById("modal-title").textContent = title;
-            document.getElementById("modal-description1").textContent = descriptions[0] || "";
-            document.getElementById("modal-description2").textContent = descriptions[1] || "";
-            document.getElementById("modal-description3").textContent = descriptions[2] || "";
-            document.getElementById("modal").style.display = "flex";
+            document.getElementById("modal-image-gallery").src = currentImages[currentIndex];
+            document.getElementById("modal-title-gallery").textContent = title;
+            document.getElementById("modal-description1-gallery").textContent = descriptions[0] || "";
+            document.getElementById("modal-description2-gallery").textContent = descriptions[1] || "";
+            document.getElementById("modal-description3-gallery").textContent = descriptions[2] || "";
+            document.getElementById("modal-gallery").style.display = "flex";
         }
 
         function closeModal(event) {
-            if (!event || event.target.id === "modal" || event.target.classList.contains("close-button")) {
-                document.getElementById("modal").style.display = "none";
+            if (!event || event.target.id === "modal-gallery" || event.target.classList.contains("close-button")) {
+                document.getElementById("modal-gallery").style.display = "none";
             }
         }
 
@@ -22,7 +22,7 @@ let currentImages = [];
             event.stopPropagation();
             if (currentIndex < currentImages.length - 1) {
                 currentIndex++;
-                document.getElementById("modal-image").src = currentImages[currentIndex];
+                document.getElementById("modal-image-gallery").src = currentImages[currentIndex];
             }
         }
 
@@ -30,6 +30,6 @@ let currentImages = [];
             event.stopPropagation();
             if (currentIndex > 0) {
                 currentIndex--;
-                document.getElementById("modal-image").src = currentImages[currentIndex];
+                document.getElementById("modal-image-gallery").src = currentImages[currentIndex];
             }
         }
