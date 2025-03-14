@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
             reviewDiv.classList.add('review');
             reviewDiv.innerHTML = `
                 <div class="user-info">
-                    <img src="images/avatar.png" alt="Аватар" class="avatar">
+                    <img src="img/иконки/100x100.gif" alt="Аватар" class="avatar">
                     <div>
                         <span class="username">${review.username}</span>
                         <span class="date">${review.date}</span>

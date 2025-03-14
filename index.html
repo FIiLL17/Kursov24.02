@@ -12,41 +12,27 @@
 </head>
 
 <body>
-    <!-- /* -------------------------------------------------------------header------------------------------------------------------------- */ -->
-     <header>
-        <div class="header-left">
-        <img src="img/Логотип в стиле эко.png" alt="">
-        <h1>Keenly Green</h1> 
-        </div>
-        
-        <div class="header-midl">
-        <img src="img/иконки/Снимок экрана (2)-Photoroom.png" alt="">
-        <p>Жилищный корпус премиум класса</p>  
-        </div>
-        
-        <div class="header-right">
-        <!-- <a href=»tel:+79041090910>+79041090910</a> -->
-        <button>заказать звонок</button>
-        <nav class="menu">
-            <div class="menu-open-button">
-                <span class="hamburger hamburger-1"></span>
-                <span class="hamburger hamburger-2"></span>
-                <span class="hamburger hamburger-3"></span>
-            </div>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <!-- <source src="img/Gen-3 Alpha Turbo 2343022229, A storm is raging in, Flux_Dev_a_lush_3d_r, M 5.mp4" type="video/mp4"> -->
+            <source src="img/Gen-3 Alpha Turbo 4093479149, The branches of the , Flux_Dev_a_lush_3d_r, M 5.mp4" type="video/mp4">
+            <source src="video.webm" type="video/webm">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </div>
     
-            <a href="#header" class="menu-item" style="--angle:0deg"> <i class="fa fa-home"></i> </a>
-            <a href="#about" class="menu-item" style="--angle:45deg"> <i class="fa fa-building"></i> </a>
-            <a href="#genplan" class="menu-item" style="--angle:90deg"> <i class="fa fa-map"></i> </a>
-            <a href="#gallery" class="menu-item" style="--angle:135deg"> <i class="fa fa-image"></i> </a>
-            <a href="#review-container" class="menu-item" style="--angle:180deg"> <i class="fa fa-comments"></i> </a>
-            <a href="#kompani" class="menu-item" style="--angle:225deg"> <i class="fa fa-info-circle"></i> </a>
-            <a href="#map" class="menu-item" style="--angle:270deg"> <i class="fa fa-map-marker-alt"></i> </a>
-        </nav>
-        </div>
-        
-     </header>
-         
-
+    <!-- /* -------------------------------------------------------------header------------------------------------------------------------- */ -->
+    <header>
+        <img src="img/иконки/photo_2025-03-09_22-19-18.jpg" alt="">
+        <a href="#header">Главная</a>
+        <a href="#about">Характеристика</a>
+        <a href="#genplan">План</a>
+        <a href="#gallery">Фотоальбом</a>
+        <a href="#review-container">Отзывы</a>
+        <a href="#kompani">О нас</a>
+        <a href="#map">Карта</a>
+        <button class="Authorization">Авторизация</button>
+    </header>
     <!-- /* -------------------------------------------------------------header------------------------------------------------------------- */ -->
 
 
@@ -233,7 +219,7 @@
         <div class="reviews-top">
             <div class="review">
                 <div class="user-info">
-                    <img src="" alt="Аватар" class="avatar">
+                    <img src="img/иконки/100x100.gif" alt="Аватар" class="avatar">
                     <div>
                         <span class="username">Иван Иванов</span>
                         <span class="date">10 октября 2023</span>
@@ -246,7 +232,7 @@
 
             <div class="review">
                 <div class="user-info">
-                    <img src="" alt="Аватар" class="avatar">
+                    <img src="img/иконки/100x100.gif" alt="Аватар" class="avatar">
                     <div>
                         <span class="username">Мария Петрова</span>
                         <span class="date">5 октября 2023</span>
@@ -262,7 +248,7 @@
         <div class="reviews-bottom">
             <div class="review">
                 <div class="user-info">
-                    <img src="" alt="Аватар" class="avatar">
+                    <img src="img/иконки/100x100.gif" alt="Аватар" class="avatar">
                     <div>
                         <span class="username">Алексей Смирнов</span>
                         <span class="date">1 октября 2023</span>
@@ -275,7 +261,7 @@
 
             <div class="review">
                 <div class="user-info">
-                    <img src="" alt="Аватар" class="avatar">
+                    <img src="img/иконки/100x100.gif" alt="Аватар" class="avatar">
                     <div>
                         <span class="username">Елена Кузнецова</span>
                         <span class="date">25 сентября 2023</span>
@@ -302,10 +288,10 @@
     <!-- /* -------------------------------------------------------------kompani------------------------------------------------------------- */ -->
     <div class="kompani" id="kompani">
         <div class="kompani-left">
-            <img src="img/Логотип в стиле эко.png" alt="Логотип">
+            <img src="img/иконки/photo_2025-03-09_22-19-18.jpg" alt="Логотип">
             <div class="info">
                 <p>Застройщик</p>
-                <h1>Компания Keenly Green</h1>
+                <h1>Компания Klean Delta</h1>
                 <h3>4,4 <img src="img/иконки/free-icon-star-1828884.png" alt="Звезда"></h3>
                 <p>618 отзывов</p>
             </div>
@@ -322,7 +308,7 @@
                 </div>
             </div>
             <div class="text-block">
-                Девелопер Keenly Green — компания с 25-летней историей. В портфеле — 40 проектов жилой, коммерческой,
+                Девелопер Klean Delta — компания с 25-летней историей. В портфеле — 40 проектов жилой, коммерческой,
                 социальной и многофункциональной недвижимости в Шалчининкай и Мантвелишки. С 2001 года было...
             </div>
             <a href="#" class="more-link">Узнать больше о застройщике</a>
@@ -393,13 +379,13 @@
         </div>
 
         <div class="fotter-center">
-            <a href="#">Главная</a>
-            <a href="#">Характеристика</a>
-            <a href="#">План</a>
-            <a href="#">Фотоальбом</a>
-            <a href="#">Отзывы</a>
-            <a href="#">О нас</a>
-            <a href="#">Карта</a>
+            <a href="#header">Главная</a>
+            <a href="#about">Характеристика</a>
+            <a href="#genplan">План</a>
+            <a href="#gallery">Фотоальбом</a>
+            <a href="#review-container">Отзывы</a>
+            <a href="#kompani">О нас</a>
+            <a href="#map">Карта</a>
         </div>
 
         <div class="fotter-right">
@@ -420,6 +406,7 @@
     <!-- -------------------------------------------------------------Все тесты тукт ------------------------------------------------------------- -->
     <script src="gallery.js"></script>
     <script src="revue.js"></script>
-    <script src="BurgerMenu.js"></script>
+    <script src="headerMenu.js"></script>
+    
 </body>
 </html>
