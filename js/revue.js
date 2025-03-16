@@ -9,13 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const allReviewsList = document.getElementById('all-reviews-list');
     const closeModal = allReviewsModal.querySelector('.close'); // Исправленный выбор крестика
 
-    // Проверка, что элемент .close существует
-    if (!closeModal) {
-        console.error('Элемент .close не найден!');
-    } else {
-        console.log('Элемент .close найден:', closeModal);
-    }
-
     // Статичные отзывы
     let allReviews = [
         {
@@ -48,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
             reviewDiv.classList.add('review');
             reviewDiv.innerHTML = `
                 <div class="user-info">
-                    <img src="images/avatar.png" alt="Аватар" class="avatar">
+                    <img src="img/иконки/100x100.gif" alt="Аватар" class="avatar">
                     <div>
                         <span class="username">${review.username}</span>
                         <span class="date">${review.date}</span>
@@ -69,7 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Закрытие модального окна при нажатии на крестик
     if (closeModal) {
         closeModal.addEventListener('click', () => {
-            console.log('Крестик нажат!'); // Отладочное сообщение
             allReviewsModal.style.display = 'none';
         });
     }
