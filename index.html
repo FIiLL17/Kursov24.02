@@ -23,109 +23,40 @@
     </div>
     
     <!-- /* -------------------------------------------------------------header------------------------------------------------------------- */ -->
-    <header>
-        <img src="img/иконки/photo_2025-03-09_22-19-18.jpg" alt="">
-        <a href="#header">Главная</a>
-        <a href="#about">Характеристика</a>
-        <a href="#genplan">План</a>
-        <a href="#gallery">Фотоальбом</a>
-        <a href="#review-container">Отзывы</a>
-        <a href="#kompani">О нас</a>
-        <a href="#map">Карта</a>
-        <button class="Authorization" id="authButton">Авторизация</button>
-        <button class="Logout" id="logoutButton" style="display: none;">Выйти</button>
-    </header>
-    
- <!-- Модальное окно авторизации -->
-<div id="auth-modal" class="auth-modal">
-    <div class="auth-modal-content">
-      <span class="auth-modal-close">&times;</span>
-      <h2>Авторизация</h2>
-      <form id="auth-login-form" action="login.php" method="POST">
-        <input 
-          type="text" 
-          id="auth-login-number" 
-          name="loginNumber" 
-          placeholder="Номер телефона" 
-          autocomplete="tel" 
-          required
-        >
-        <input 
-          type="password" 
-          id="auth-login-password" 
-          name="loginPassword" 
-          placeholder="Пароль" 
-          autocomplete="current-password" 
-          required
-        >
-        <button type="submit">Войти</button>
-      </form>
-      <button id="auth-show-register-form">Зарегистрироваться</button>
-    </div>
-  </div>
-  
-  <!-- Модальное окно регистрации -->
-<div id="auth-register-modal" class="auth-modal">
-    <div class="auth-modal-content">
-        <span class="auth-modal-close">&times;</span>
-        <h2>Регистрация</h2>
-        <form id="auth-register-form" action="register.php" method="POST">
-            <input 
-                type="text" 
-                id="auth-register-name" 
-                name="registerName" 
-                placeholder="Имя" 
-                autocomplete="name" 
-                required
-                pattern="[A-Za-zА-Яа-яЁё]+"
-                title="Имя должно содержать только буквы"
-            >
-            <input 
-                type="text" 
-                id="auth-register-surname" 
-                name="registerSurname" 
-                placeholder="Фамилия" 
-                autocomplete="family-name" 
-                required
-                pattern="[A-Za-zА-Яа-яЁё]+"
-                title="Фамилия должна содержать только буквы"
-            >
-            <input 
-                type="text" 
-                id="auth-register-patronymic" 
-                name="registerPatronymic" 
-                placeholder="Отчество (если есть)" 
-                autocomplete="additional-name" 
-                pattern="[A-Za-zА-Яа-яЁё]+"
-                title="Отчество должно содержать только буквы"
-            >
-            <input 
-                type="text" 
-                id="auth-register-number" 
-                name="registerNumber" 
-                placeholder="Номер телефона" 
-                autocomplete="tel" 
-                required
-                pattern="\+[0-9]{1,13}"
-                title="Номер телефона должен начинаться с + и содержать до 13 цифр"
-            >
-            <div class="password-container">
-                <input 
-                    type="password" 
-                    id="auth-register-password" 
-                    name="registerPassword" 
-                    placeholder="Пароль" 
-                    autocomplete="new-password" 
-                    required
-                >
-                <button type="button" id="toggle-password">Показать</button>
+     <header>
+        <div class="header-left">
+        <img src="img/Логотип в стиле эко.png" alt="">
+        <h1>Keenly Green</h1> 
+        </div>
+        
+        <div class="header-midl">
+        <img src="img/иконки/Снимок экрана (2)-Photoroom.png" alt="">
+        <p>Жилищный корпус премиум класса</p>  
+        </div>
+        
+        <div class="header-right">
+        <!-- <a href=»tel:+79041090910>+79041090910</a> -->
+        <button>заказать звонок</button>
+        <nav class="menu">
+            <div class="menu-open-button">
+                <span class="hamburger hamburger-1"></span>
+                <span class="hamburger hamburger-2"></span>
+                <span class="hamburger hamburger-3"></span>
             </div>
-            <button type="submit">Зарегистрироваться</button>
-        </form>
-        <button id="auth-show-login-form">Уже есть аккаунт? Войти</button>
-    </div>
-</div>
-  
+    
+            <a href="#header" class="menu-item" style="--angle:0deg"> <i class="fa fa-home"></i> </a>
+            <a href="#about" class="menu-item" style="--angle:45deg"> <i class="fa fa-building"></i> </a>
+            <a href="#genplan" class="menu-item" style="--angle:90deg"> <i class="fa fa-map"></i> </a>
+            <a href="#gallery" class="menu-item" style="--angle:135deg"> <i class="fa fa-image"></i> </a>
+            <a href="#review-container" class="menu-item" style="--angle:180deg"> <i class="fa fa-comments"></i> </a>
+            <a href="#kompani" class="menu-item" style="--angle:225deg"> <i class="fa fa-info-circle"></i> </a>
+            <a href="#map" class="menu-item" style="--angle:270deg"> <i class="fa fa-map-marker-alt"></i> </a>
+        </nav>
+        </div>
+        
+     </header>
+         
+
     <!-- /* -------------------------------------------------------------header------------------------------------------------------------- */ -->
 
 
@@ -472,13 +403,19 @@
         </div>
 
         <div class="fotter-center">
-            <a href="#header">Главная</a>
-            <a href="#about">Характеристика</a>
-            <a href="#genplan">План</a>
-            <a href="#gallery">Фотоальбом</a>
-            <a href="#review-container">Отзывы</a>
-            <a href="#kompani">О нас</a>
-            <a href="#map">Карта</a>
+            <a href="#">Главная</a>
+            <a href="#">Характеристика</a>
+            <a href="#">План</a>
+            <a href="#">Фотоальбом</a>
+            <a href="#">Отзывы</a>
+            <a href="#">О нас</a>
+            <a href="#">Карта</a>
+        </div>
+
+        <div class="fotter-right">
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="+7 (999) 999-99-99">
+            <button>Отправить</button>
         </div>
 
     </div>
@@ -491,10 +428,8 @@
     <!-- -------------------------------------------------------------Все тесты тукт ------------------------------------------------------------- -->
 
     <!-- -------------------------------------------------------------Все тесты тукт ------------------------------------------------------------- -->
-    <script src="js/auth.js"></script>
-    <script src="js/gallery.js"></script>
-    <script src="js/headerMenu.js"></script>
-    <script src="js/revue.js"></script>
-    
+    <script src="gallery.js"></script>
+    <script src="revue.js"></script>
+    <script src="BurgerMenu.js"></script>
 </body>
 </html>
